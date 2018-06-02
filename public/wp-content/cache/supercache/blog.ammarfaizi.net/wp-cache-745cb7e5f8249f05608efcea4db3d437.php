@@ -6,33 +6,46 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ice Tea | Just another WordPress site</title>
+	<title>Fungsi substr dalam PHP | Ice Tea</title>
 <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
 <!--[if lt IE 9]><script>document.createElement('video');</script><![endif]-->
 
+<!-- Start The SEO Framework by Sybre Waaijer -->
+<meta name="robots" content="noydir" />
+<link rel="canonical" href="https://blog.ammarfaizi.net/php/substr/" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.ammarfaizi.net/","name":"Ice Tea"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.ammarfaizi.net/category/php/","name":"php"}},{"@type":"ListItem","position":3,"item":{"name":"Fungsi substr dalam PHP"}}]}</script>
+<!-- End The SEO Framework by Sybre Waaijer | 0.00338s -->
+
+
 <!-- All in One SEO Pack 2.6 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
-<link rel="canonical" href="https://blog.ammarfaizi.net/" />
+<link rel="canonical" href="https://blog.ammarfaizi.net/php/substr/" />
 <!-- /all in one seo pack -->
 
 <!-- This site is optimized with the Yoast SEO plugin v7.5.3 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="Just another WordPress site"/>
-<link rel="canonical" href="https://blog.ammarfaizi.net/" />
+<!-- Admin only notice: this page does not show a meta description because it does not have one, either write it for this page specifically or go into the [SEO - Search Appearance] menu and set up a template. -->
+<link rel="canonical" href="https://blog.ammarfaizi.net/php/substr/" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Ice Tea - Just another WordPress site" />
-<meta property="og:description" content="Just another WordPress site" />
-<meta property="og:url" content="https://blog.ammarfaizi.net/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Fungsi substr dalam PHP - Ice Tea" />
+<meta property="og:description" content="substr substr digunakan untuk mengambil beberapa bagian dari sebuah string. Parameter Dalam fungsi substr terdapat 3 parameter. substr($string, $start, $length); $string (string) String yang akan diambil bagiannya. $start (int) Posisi &hellip;" />
+<meta property="og:url" content="https://blog.ammarfaizi.net/php/substr/" />
 <meta property="og:site_name" content="Ice Tea" />
+<meta property="article:author" content="https://www.facebook.com/ammarfaizi2" />
+<meta property="article:section" content="php" />
+<meta property="article:published_time" content="2018-06-02T01:58:13+00:00" />
+<meta property="article:modified_time" content="2018-06-02T02:42:50+00:00" />
+<meta property="og:updated_time" content="2018-06-02T02:42:50+00:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:description" content="Just another WordPress site" />
-<meta name="twitter:title" content="Ice Tea - Just another WordPress site" />
-<script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/blog.ammarfaizi.net\/","name":"Ice Tea","potentialAction":{"@type":"SearchAction","target":"https:\/\/blog.ammarfaizi.net\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<meta name="twitter:description" content="substr substr digunakan untuk mengambil beberapa bagian dari sebuah string. Parameter Dalam fungsi substr terdapat 3 parameter. substr($string, $start, $length); $string (string) String yang akan diambil bagiannya. $start (int) Posisi [&hellip;]" />
+<meta name="twitter:title" content="Fungsi substr dalam PHP - Ice Tea" />
+<meta name="twitter:creator" content="@AmmarFaizi" />
 <!-- / Yoast SEO plugin. -->
 
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="Ice Tea &raquo; Feed" href="https://blog.ammarfaizi.net/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Ice Tea &raquo; Comments Feed" href="https://blog.ammarfaizi.net/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Ice Tea &raquo; Fungsi substr dalam PHP Comments Feed" href="https://blog.ammarfaizi.net/php/substr/feed/" />
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/blog.ammarfaizi.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.6"}};
 			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -92,8 +105,9 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPr
 <link rel='https://api.w.org/' href='https://blog.ammarfaizi.net/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.ammarfaizi.net/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.ammarfaizi.net/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 4.9.6" />
-		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<link rel="alternate" type="application/json+oembed" href="https://blog.ammarfaizi.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.ammarfaizi.net%2Fphp%2Fsubstr%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.ammarfaizi.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.ammarfaizi.net%2Fphp%2Fsubstr%2F&#038;format=xml" />
+<link rel="pingback" href="https://blog.ammarfaizi.net/xmlrpc.php">		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 		<style type="text/css" id="custom-background-css"></style><meta name='robots' content='noindex,follow' />
 <style>
 			body.wp-customizer-unloading {
@@ -141,7 +155,7 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPr
     
 </head>
 
-<body data-rsssl=1 class="home blog logged-in">
+<body data-rsssl=1 class="post-template-default single single-post postid-7 single-format-standard logged-in">
 <div class="site-overlay"></div>
     <div id="page" class="hfeed site">
 
@@ -188,34 +202,115 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPr
             </nav>
                 <!-- /.container -->            
         </header>       
-       
-        <section class="blog-section">
-            <div class="container">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="row">
-                    
-          						<article id="post-7" class="post post-7 type-post status-publish format-standard hentry category-php category-php-function">
-                            <div class="col-md-4 col-sm-4 col-xs-12">
-								                                                                
-                                <a href="https://blog.ammarfaizi.net/php/substr/" class="post-thumbnail">
-                                                                    </a>
+<div id="content" class="site-content">
+
+						
+
+
+	<div class="container">
+		<div class="row">
+
+			<article id="post-7" class="single-post-wrapper post-7 post type-post status-publish format-standard hentry category-php category-php-function">               
+			                        
+            <div class="col-lg-8 col-md-8 col-xs-12 col-sm-12 col-lg-offset-2 col-md-offset-2">            
+				<div id="primary" class="content-area">
+					<main id="main" class="site-main">
+
+
+					
                                 <header class="entry-header">
-									<h3 class="entry-title"><a href="https://blog.ammarfaizi.net/php/substr/">Fungsi substr dalam PHP</a></h3>
+									<h1 class="entry-title">Fungsi substr dalam PHP</h1>
                                     <div class="entry-meta">
                                         <span>
-										                                            <span><a href="https://blog.ammarfaizi.net/category/php/">php</a></span>
-                                                                                
+												<a href="https://blog.ammarfaizi.net/category/php/" rel="category tag">php</a>&nbsp;&bull;&nbsp;<a href="https://blog.ammarfaizi.net/category/php/php-function/" rel="category tag">php-function</a>										</span>                                       
                                         <span class="separator">|</span>
                                         <span class="date">2018-06-02</span>
                                     </div>
                                 </header>
-                            </div>
-						</article><!-- #post-7 -->                                                <div class='clearfix'></div>                        
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
+                                <div class="entry-content">
+                                <h1><strong>substr</strong></h1>
+<p><strong>substr</strong> digunakan untuk mengambil beberapa bagian dari sebuah string.</p>
+<h1>Parameter</h1>
+<p>Dalam fungsi <strong>substr </strong>terdapat 3 parameter.</p>
+<pre>substr($string, $start, $length);</pre>
+<h6>$string (string)</h6>
+<p>String yang akan diambil bagiannya.</p>
+<h6>$start (int)</h6>
+<p>Posisi mulainya pengambilan bagian.</p>
+<h6>$length (int) #optional</h6>
+<p>Panjangnya karakter yang akan diambil.<br />
+Apabila parameter $length tidak diberikan sebuah nilai maka otomatis panjangnya bagian yang akan diambil dimulai dari parameter $start sampai string tersebut berakhir <strong>(lebih jelasnya dapat dilihat di contoh 3)</strong>.</p>
+<h1>Contoh Penggunaan</h1>
+<p>Posisi string dalam PHP dimulai dari 0. Misalnya ada sebuah string &#8220;qweasdzxc&#8221; maka:<br />
+&#8220;q&#8221; adalah posisi ke-0<br />
+&#8220;w&#8221; adalah posisi ke-1<br />
+&#8220;e&#8221; adalah posisi ke-2<br />
+&#8220;a&#8221; adalah posisi ke-3<br />
+&#8220;s&#8221; adalah posisi ke-4<br />
+&#8220;d&#8221; adalah posisi ke-5<br />
+&#8220;z&#8221; adalah posisi ke-6<br />
+&#8220;x&#8221; adalah posisi ke-7<br />
+&#8220;c&#8221; adalah posisi ke-8</p>
+<h6>Contoh 1</h6>
+<pre>&lt;?php
+$string = "qweasdzxc";
+echo substr($string, 0, 3); // output "qwe"</pre>
+<p>Disediakan sebuah string &#8220;qweasdzxc&#8221;. Pengambilan bagian string dimulai dari <strong>posisi 0 (huruf &#8220;q&#8221;)</strong> sepanjang <strong>3</strong> karakter, maka dihasilkanlah output &#8220;qwe&#8221;.</p>
+<h6>Contoh 2</h6>
+<pre>&lt;?php
+$string = "qweasdzxc";
+echo substr($string, 3, 3); // output "asd"</pre>
+<p>Disediakan sebuah string &#8220;qweasdzxc&#8221;. Pengambilan bagian string dimulai dari <strong>posisi 3 (huruf &#8220;a&#8221;)</strong> sepanjang <strong>3</strong> karakter, maka dihasilkanlah output &#8220;asd&#8221;.</p>
+<h6>Contoh 3</h6>
+<pre>&lt;?php
+$string = "qweasdzxc";
+echo substr($string, 3); // output "asdzxc"</pre>
+<p>Disediakan sebuah string &#8220;qweasdzxc&#8221;. Pengambilan bagian string dimulai dari <strong>posisi 3 (huruf &#8220;a&#8221;)</strong> <strong>sampai string tersebut berakhir (karena parameter $length dikosongkan)</strong>, maka dihasilkanlah output &#8220;asdzxc&#8221;.</p>
+<h6>Contoh 4</h6>
+<pre>&lt;?php
+$string = "qweasdzxc";
+echo substr($string, -3, 2); // output "zx"</pre>
+<p>Disediakan sebuah string &#8220;qweasdzxc&#8221;. Pengambilan bagian string dimulai dari <strong>posisi -3 (huruf &#8220;z&#8221;)</strong> sepanjang <strong>2</strong> karakter, maka dihasilkanlah output &#8220;zx&#8221;. Pada contoh kali ini kita menggunakan start negatif, maka penghitungan posisinya dihitung dari belakang string dan dimulai dari <strong>-1</strong> sampai <strong>-n</strong> secara berurutan ke depan.</p>
+                                </div>
+										                                
+
+      <div class="author-section">
+                <h2 class="author-header">About The Author</h2>
+                <hr>
+                <div class="img-holder">
+                  <img alt='' src='https://secure.gravatar.com/avatar/2bfc8425762a3514ac2cd161090d42cb?s=134&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/2bfc8425762a3514ac2cd161090d42cb?s=268&#038;d=mm&#038;r=g 2x' class='avatar avatar-134 photo img-responsive img-circle' height='134' width='134' />                </div>
+                <div class="text-holder">
+                  <h3 class="author-name">Ammar Faizi</h3>
+                  I am a fullstack developer and system administrator.                </div>
+              </div>
+              <div class="clearfix"></div>
+        
+        
+    			<div id="comments" class="comments-area">
+
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/php/substr/?customize_changeset_uuid=70963db6-f146-42fd-8d12-073b688b701e&amp;customize_theme=marinate&amp;customize_messenger_channel=preview-0#respond" style="display:none;">Cancel Reply</a></small></h3>			<form action="https://blog.ammarfaizi.net/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="logged-in-as">Logged in as <a href="https://blog.ammarfaizi.net/wp-admin/profile.php">Ammar Faizi</a>. <a href="https://blog.ammarfaizi.net/wp-login.php?action=logout&amp;redirect_to=https%3A%2F%2Fblog.ammarfaizi.net%2Fphp%2Fsubstr%2F&amp;_wpnonce=990f53bd61" title="Log out of this account">Log out?</a></p><p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" class="form-control" name="comment" placeholder="Leave your comment here..." cols="45" rows="10" required="required" aria-required="true"></textarea></p><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Submit" /> <input type='hidden' name='comment_post_ID' value='7' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="debe12facf" /></p><input type="hidden" id="_wp_unfiltered_html_comment_disabled" name="_wp_unfiltered_html_comment_disabled" value="bc30533ef1" /><script>(function(){if(window===window.parent){document.getElementById('_wp_unfiltered_html_comment_disabled').name='_wp_unfiltered_html_comment';}})();</script>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="82"/></p>			</form>
+			</div><!-- #respond -->
+	
+</div><!-- #comments -->
+ 
+
+
+					</main><!-- #main -->
+				</div><!-- #primary -->
+	    	</div><!-- .col-md-8 -->
+			                        
+            <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+                        </div>
+        </article><!-- #post-7 -->                                                		        
+    	</div><!-- .row -->
+  </div><!-- .container -->
+</div><!-- #content -->
+
         
         <footer id="colophon" class="site-footer" role="contentinfo">
             <div class="col-md-12 no-padding a">
@@ -307,6 +402,7 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPr
 </script>
 <script>var _wpCustomizePreviewNavMenusExports = {"navMenuInstanceArgs":{"7060d329dda989a006df13ba10551ec9":{"after":"","before":"","can_partial_refresh":false,"container":"ul","container_class":"","container_id":"","depth":0,"echo":true,"fallback_cb":"","item_spacing":"preserve","item_wrap":"<ul class=\"%2$s\">%3s<\/ul>","items_wrap":"<ul id=\"%1$s\" class=\"%2$s\">%3$s<\/ul>","link_after":"","link_before":"","menu":"","menu_class":"nav navbar-nav main-nav","menu_id":"primary-menu","theme_location":"menu-1","walker":"","args_hmac":"7060d329dda989a006df13ba10551ec9"},"7a84593e56637a60ae8cbd34bd812d3d":{"after":"","before":"","can_partial_refresh":true,"container":"ul","container_class":"","container_id":"","depth":0,"echo":true,"fallback_cb":"wp_page_menu","item_spacing":"preserve","item_wrap":"<ul class=\"%2$s\">%3s<\/ul>","items_wrap":"<ul id=\"%1$s\" class=\"%2$s\">%3$s<\/ul>","link_after":"","link_before":"","menu":"","menu_class":"","menu_id":"","theme_location":"menu-1","walker":"","args_hmac":"7a84593e56637a60ae8cbd34bd812d3d"}}};</script><script src="https://blog.ammarfaizi.net/wp-content/themes/marinate/js/bootstrap.js?ver=1.0.3"></script>
 <script src="https://blog.ammarfaizi.net/wp-content/themes/marinate/js/pushy.js?ver=1.0.3"></script>
+<script src="https://blog.ammarfaizi.net/wp-includes/js/comment-reply.min.js?ver=4.9.6"></script>
 <script src="https://blog.ammarfaizi.net/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=4.9.6"></script>
 <script src="https://blog.ammarfaizi.net/wp-includes/js/mediaelement/renderers/vimeo.min.js?ver=4.2.6-78496d1"></script>
 <script type='text/javascript'>
@@ -321,8 +417,9 @@ var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
 <script src="https://blog.ammarfaizi.net/wp-includes/js/customize-preview-widgets.min.js?ver=4.9.6"></script>
 <script src="https://blog.ammarfaizi.net/wp-includes/js/customize-preview-nav-menus.min.js?ver=4.9.6"></script>
 <script src="https://blog.ammarfaizi.net/wp-includes/js/wp-embed.min.js?ver=4.9.6"></script>
+<script async="async" src="https://blog.ammarfaizi.net/wp-content/plugins/akismet/_inc/form.js?ver=4.0.7"></script>
 		<script type="text/javascript">
-			var _wpCustomizeSettings = {"changeset":{"uuid":"d968f0e6-d43c-4974-a6b9-9cc5a0914207","autosaved":false},"timeouts":{"selectiveRefresh":250,"keepAliveSend":1000},"theme":{"stylesheet":"marinate","active":true},"url":{"self":"\/","allowed":["https:\/\/blog.ammarfaizi.net\/"],"allowedHosts":["blog.ammarfaizi.net"],"isCrossDomain":false},"channel":"preview-0","activePanels":{"themes":true,"nav_menus":true,"widgets":true},"activeSections":{"installed_themes":true,"wporg_themes":true,"add_menu":true,"menu_locations":true,"title_tagline":true,"marinate_social_settings":true,"colors":true,"header_image":true,"background_image":true,"static_front_page":true,"custom_css":true,"wpseo_breadcrumbs_customizer_section":false,"sidebar-widgets-sidebar-1":true,"sidebar-widgets-sidebar-main":false,"sidebar-widgets-footer-1":true,"sidebar-widgets-footer-2":true,"sidebar-widgets-footer-3":true},"activeControls":{"custom_logo":true,"blogname":true,"blogdescription":true,"header_textcolor":true,"background_color":true,"header_image":true,"background_image":true,"background_preset":true,"background_position":true,"background_size":true,"background_repeat":true,"background_attachment":true,"show_on_front":true,"page_on_front":true,"page_for_posts":true,"custom_css":true,"wpseo-breadcrumbs-display-blog-page":false,"wpseo-breadcrumbs-separator":true,"wpseo-breadcrumbs-home":true,"wpseo-breadcrumbs-prefix":true,"wpseo-breadcrumbs-archiveprefix":true,"wpseo-breadcrumbs-searchprefix":true,"wpseo-breadcrumbs-404crumb":true,"marinate_social_ed":true,"marinate_social_ed_footer":true,"marinate_button_url_fb":true,"marinate_button_url_tw":true,"marinate_button_url_pin":true,"marinate_button_url_ins":true,"marinate_button_url_gp":true,"nav_menu_locations[menu-1]":true,"display_header_text":true,"site_icon":true,"sidebars_widgets[sidebar-1]":true,"widget_search[2]":true,"widget_recent-posts[2]":true,"widget_recent-comments[2]":true,"widget_archives[2]":true,"widget_categories[2]":true,"widget_meta[2]":true,"sidebars_widgets[sidebar-main]":true,"sidebars_widgets[footer-1]":true,"sidebars_widgets[footer-2]":true,"sidebars_widgets[footer-3]":true},"settingValidities":[],"nonce":{"save":"a3691ce145","preview":"c4c7b922fc","switch_themes":"924c23ebfc","dismiss_autosave_or_lock":"16e961a3a5","override_lock":"da1da1b084","trash":"8ad2f18686","update-widget":"b0de54245c","customize-menus":"254a3634ba"},"l10n":{"shiftClickToEdit":"Shift-click to edit this element.","linkUnpreviewable":"This link is not live-previewable.","formUnpreviewable":"This form is not live-previewable."},"_dirty":[]};
+			var _wpCustomizeSettings = {"changeset":{"uuid":"70963db6-f146-42fd-8d12-073b688b701e","autosaved":false},"timeouts":{"selectiveRefresh":250,"keepAliveSend":1000},"theme":{"stylesheet":"marinate","active":true},"url":{"self":"\/php\/substr\/","allowed":["https:\/\/blog.ammarfaizi.net\/"],"allowedHosts":["blog.ammarfaizi.net"],"isCrossDomain":false},"channel":"preview-0","activePanels":{"themes":true,"nav_menus":true,"widgets":true},"activeSections":{"installed_themes":true,"wporg_themes":true,"add_menu":true,"menu_locations":true,"title_tagline":true,"marinate_social_settings":true,"colors":true,"header_image":true,"background_image":true,"static_front_page":true,"custom_css":true,"wpseo_breadcrumbs_customizer_section":false,"sidebar-widgets-sidebar-1":true,"sidebar-widgets-sidebar-main":true,"sidebar-widgets-footer-1":true,"sidebar-widgets-footer-2":true,"sidebar-widgets-footer-3":true},"activeControls":{"custom_logo":true,"blogname":true,"blogdescription":true,"header_textcolor":true,"background_color":true,"header_image":true,"background_image":true,"background_preset":true,"background_position":true,"background_size":true,"background_repeat":true,"background_attachment":true,"show_on_front":true,"page_on_front":true,"page_for_posts":true,"custom_css":true,"wpseo-breadcrumbs-display-blog-page":false,"wpseo-breadcrumbs-separator":true,"wpseo-breadcrumbs-home":true,"wpseo-breadcrumbs-prefix":true,"wpseo-breadcrumbs-archiveprefix":true,"wpseo-breadcrumbs-searchprefix":true,"wpseo-breadcrumbs-404crumb":true,"marinate_social_ed":true,"marinate_social_ed_footer":true,"marinate_button_url_fb":true,"marinate_button_url_tw":true,"marinate_button_url_pin":true,"marinate_button_url_ins":true,"marinate_button_url_gp":true,"nav_menu_locations[menu-1]":true,"nav_menu_locations[mstba_menu]":true,"display_header_text":true,"site_icon":true,"sidebars_widgets[sidebar-1]":true,"widget_search[2]":true,"widget_recent-posts[2]":true,"widget_recent-comments[2]":true,"widget_archives[2]":true,"widget_categories[2]":true,"widget_meta[2]":true,"sidebars_widgets[sidebar-main]":true,"sidebars_widgets[footer-1]":true,"sidebars_widgets[footer-2]":true,"sidebars_widgets[footer-3]":true},"settingValidities":[],"nonce":{"save":"a3691ce145","preview":"c4c7b922fc","switch_themes":"924c23ebfc","dismiss_autosave_or_lock":"16e961a3a5","override_lock":"da1da1b084","trash":"8ad2f18686","update-widget":"b0de54245c","customize-menus":"254a3634ba"},"l10n":{"shiftClickToEdit":"Shift-click to edit this element.","linkUnpreviewable":"This link is not live-previewable.","formUnpreviewable":"This form is not live-previewable."},"_dirty":[]};
 			_wpCustomizeSettings.values = {};
 			(function( v ) {
 				v["active_theme"] = "";
@@ -361,6 +458,7 @@ v["marinate_button_url_pin"] = "";
 v["marinate_button_url_ins"] = "";
 v["marinate_button_url_gp"] = "";
 v["nav_menu_locations[menu-1]"] = 0;
+v["nav_menu_locations[mstba_menu]"] = 0;
 v["nav_menus_created_posts"] = [];
 v["widget_pages[1]"] = {"encoded_serialized_instance":"YTowOnt9","title":"","is_widget_customizer_js_value":true,"instance_hash_key":"05c07a7d8b613f97a07b58497d0a974f"};
 v["widget_calendar[1]"] = {"encoded_serialized_instance":"YTowOnt9","title":"","is_widget_customizer_js_value":true,"instance_hash_key":"05c07a7d8b613f97a07b58497d0a974f"};
@@ -396,13 +494,13 @@ v["sidebars_widgets[footer-3]"] = [];
 			})( _wpCustomizeSettings.values );
 		</script>
 				<script type="text/javascript">
-			var _wpWidgetCustomizerPreviewSettings = {"renderedSidebars":{"footer-1":true,"footer-2":true,"footer-3":true,"sidebar-1":true},"renderedWidgets":{"search-2":true,"recent-posts-2":true,"recent-comments-2":true,"archives-2":true,"categories-2":true,"meta-2":true},"registeredSidebars":[{"name":"Off-Canvas Sidebar","id":"sidebar-1","description":"Add widgets here.","class":"","before_widget":"<aside id=\"%1$s\" class=\"widget %2$s\">","after_widget":"<\/aside>","before_title":"<h2 class=\"widget-title\">","after_title":"<\/h2>"},{"name":"Main Sidebar","id":"sidebar-main","description":"Add widgets here.","class":"","before_widget":"<aside id=\"%1$s\" class=\"widget %2$s\">","after_widget":"<\/aside>","before_title":"<h2 class=\"widget-title\">","after_title":"<\/h2>"},{"name":"Footer Area 1","id":"footer-1","description":"Add widgets here.","class":"","before_widget":"<aside id=\"%1$s\" class=\"widget %2$s\">","after_widget":"<\/aside>","before_title":"<h2 class=\"widget-title\">","after_title":"<\/h2>"},{"name":"Footer Area 2","id":"footer-2","description":"Add widgets here.","class":"","before_widget":"<aside id=\"%1$s\" class=\"widget %2$s\">","after_widget":"<\/aside>","before_title":"<h2 class=\"widget-title\">","after_title":"<\/h2>"},{"name":"Footer Area 3","id":"footer-3","description":"Add widgets here.","class":"","before_widget":"<aside id=\"%1$s\" class=\"widget %2$s\">","after_widget":"<\/aside>","before_title":"<h2 class=\"widget-title\">","after_title":"<\/h2>"}],"registeredWidgets":{"pages-1":{"name":"Pages","id":"pages-1","params":[{"number":-1}],"classname":"widget_pages","customize_selective_refresh":true,"description":"A list of your site&#8217;s Pages."},"calendar-1":{"name":"Calendar","id":"calendar-1","params":[{"number":-1}],"classname":"widget_calendar","customize_selective_refresh":true,"description":"A calendar of your site&#8217;s Posts."},"archives-2":{"name":"Archives","id":"archives-2","params":[{"number":2}],"classname":"widget_archive","customize_selective_refresh":true,"description":"A monthly archive of your site&#8217;s Posts."},"media_audio-1":{"name":"Audio","id":"media_audio-1","params":[{"number":-1}],"classname":"widget_media_audio","customize_selective_refresh":true,"description":"Displays an audio player.","mime_type":"audio"},"media_image-1":{"name":"Image","id":"media_image-1","params":[{"number":-1}],"classname":"widget_media_image","customize_selective_refresh":true,"description":"Displays an image.","mime_type":"image"},"media_gallery-1":{"name":"Gallery","id":"media_gallery-1","params":[{"number":-1}],"classname":"widget_media_gallery","customize_selective_refresh":true,"description":"Displays an image gallery.","mime_type":"image"},"media_video-1":{"name":"Video","id":"media_video-1","params":[{"number":-1}],"classname":"widget_media_video","customize_selective_refresh":true,"description":"Displays a video from the media library or from YouTube, Vimeo, or another provider.","mime_type":"video"},"meta-2":{"name":"Meta","id":"meta-2","params":[{"number":2}],"classname":"widget_meta","customize_selective_refresh":true,"description":"Login, RSS, &amp; WordPress.org links."},"search-2":{"name":"Search","id":"search-2","params":[{"number":2}],"classname":"widget_search","customize_selective_refresh":true,"description":"A search form for your site."},"text-1":{"name":"Text","id":"text-1","params":[{"number":1}],"classname":"widget_text","customize_selective_refresh":true,"description":"Arbitrary text."},"categories-2":{"name":"Categories","id":"categories-2","params":[{"number":2}],"classname":"widget_categories","customize_selective_refresh":true,"description":"A list or dropdown of categories."},"recent-posts-2":{"name":"Recent Posts","id":"recent-posts-2","params":[{"number":2}],"classname":"widget_recent_entries","customize_selective_refresh":true,"description":"Your site&#8217;s most recent Posts."},"recent-comments-2":{"name":"Recent Comments","id":"recent-comments-2","params":[{"number":2}],"classname":"widget_recent_comments","customize_selective_refresh":true,"description":"Your site&#8217;s most recent comments."},"rss-1":{"name":"RSS","id":"rss-1","params":[{"number":1}],"classname":"widget_rss","customize_selective_refresh":true,"description":"Entries from any RSS or Atom feed."},"tag_cloud-1":{"name":"Tag Cloud","id":"tag_cloud-1","params":[{"number":-1}],"classname":"widget_tag_cloud","customize_selective_refresh":true,"description":"A cloud of your most used tags."},"nav_menu-1":{"name":"Navigation Menu","id":"nav_menu-1","params":[{"number":-1}],"classname":"widget_nav_menu","customize_selective_refresh":true,"description":"Add a navigation menu to your sidebar."},"custom_html-1":{"name":"Custom HTML","id":"custom_html-1","params":[{"number":-1}],"classname":"widget_custom_html","customize_selective_refresh":true,"description":"Arbitrary HTML code."},"akismet_widget-1":{"name":"Akismet Widget","id":"akismet_widget-1","params":[{"number":-1}],"classname":"widget_akismet_widget","customize_selective_refresh":false,"description":"Display the number of spam comments Akismet has caught"},"sow-button-1":{"name":"SiteOrigin Button","id":"sow-button-1","params":[{"number":-1}],"classname":"widget_sow-button","customize_selective_refresh":false,"has_preview":true,"description":"A customizable button widget.","help":"https:\/\/siteorigin.com\/widgets-bundle\/button-widget-documentation\/"},"sow-google-map-1":{"name":"SiteOrigin Google Maps","id":"sow-google-map-1","params":[{"number":-1}],"classname":"widget_sow-google-map","customize_selective_refresh":false,"has_preview":true,"description":"A Google Maps widget.","help":"https:\/\/siteorigin.com\/widgets-bundle\/google-maps-widget\/"},"sow-image-1":{"name":"SiteOrigin Image","id":"sow-image-1","params":[{"number":-1}],"classname":"widget_sow-image","customize_selective_refresh":false,"has_preview":true,"description":"A simple image widget with massive power.","help":"https:\/\/siteorigin.com\/widgets-bundle\/image-widget-documentation\/"},"sow-slider-1":{"name":"SiteOrigin Slider","id":"sow-slider-1","params":[{"number":-1}],"classname":"widget_sow-slider","customize_selective_refresh":false,"has_preview":true,"description":"A responsive slider widget that supports images and video.","help":"https:\/\/siteorigin.com\/widgets-bundle\/slider-widget-documentation\/","panels_title":false},"sow-post-carousel-1":{"name":"SiteOrigin Post Carousel","id":"sow-post-carousel-1","params":[{"number":-1}],"classname":"widget_sow-post-carousel","customize_selective_refresh":false,"has_preview":true,"description":"Display your posts as a carousel.","instance_storage":true,"help":"https:\/\/siteorigin.com\/widgets-bundle\/post-carousel-widget\/"},"sow-editor-1":{"name":"SiteOrigin Editor","id":"sow-editor-1","params":[{"number":-1}],"classname":"widget_sow-editor","customize_selective_refresh":false,"has_preview":true,"description":"A rich-text, text editor.","help":"https:\/\/siteorigin.com\/widgets-bundle\/editor-widget\/"},"wpforms-widget-1":{"name":"WPForms","id":"wpforms-widget-1","params":[{"number":-1}],"classname":"wpforms-widget","customize_selective_refresh":false,"description":"Display a form."}},"l10n":{"widgetTooltip":"Shift-click to edit this widget."},"selectiveRefreshableWidgets":{"pages":true,"calendar":true,"archives":true,"media_audio":true,"media_image":true,"media_gallery":true,"media_video":true,"meta":true,"search":true,"text":true,"categories":true,"recent-posts":true,"recent-comments":true,"rss":true,"tag_cloud":true,"nav_menu":true,"custom_html":true,"akismet_widget":false,"sow-button":false,"sow-google-map":false,"sow-image":false,"sow-slider":false,"sow-post-carousel":false,"sow-editor":false,"wpforms-widget":false}};
+			var _wpWidgetCustomizerPreviewSettings = {"renderedSidebars":{"sidebar-main":true,"footer-1":true,"footer-2":true,"footer-3":true,"sidebar-1":true},"renderedWidgets":{"search-2":true,"recent-posts-2":true,"recent-comments-2":true,"archives-2":true,"categories-2":true,"meta-2":true},"registeredSidebars":[{"name":"Off-Canvas Sidebar","id":"sidebar-1","description":"Add widgets here.","class":"","before_widget":"<aside id=\"%1$s\" class=\"widget %2$s\">","after_widget":"<\/aside>","before_title":"<h2 class=\"widget-title\">","after_title":"<\/h2>"},{"name":"Main Sidebar","id":"sidebar-main","description":"Add widgets here.","class":"","before_widget":"<aside id=\"%1$s\" class=\"widget %2$s\">","after_widget":"<\/aside>","before_title":"<h2 class=\"widget-title\">","after_title":"<\/h2>"},{"name":"Footer Area 1","id":"footer-1","description":"Add widgets here.","class":"","before_widget":"<aside id=\"%1$s\" class=\"widget %2$s\">","after_widget":"<\/aside>","before_title":"<h2 class=\"widget-title\">","after_title":"<\/h2>"},{"name":"Footer Area 2","id":"footer-2","description":"Add widgets here.","class":"","before_widget":"<aside id=\"%1$s\" class=\"widget %2$s\">","after_widget":"<\/aside>","before_title":"<h2 class=\"widget-title\">","after_title":"<\/h2>"},{"name":"Footer Area 3","id":"footer-3","description":"Add widgets here.","class":"","before_widget":"<aside id=\"%1$s\" class=\"widget %2$s\">","after_widget":"<\/aside>","before_title":"<h2 class=\"widget-title\">","after_title":"<\/h2>"}],"registeredWidgets":{"pages-1":{"name":"Pages","id":"pages-1","params":[{"number":-1}],"classname":"widget_pages","customize_selective_refresh":true,"description":"A list of your site&#8217;s Pages."},"calendar-1":{"name":"Calendar","id":"calendar-1","params":[{"number":-1}],"classname":"widget_calendar","customize_selective_refresh":true,"description":"A calendar of your site&#8217;s Posts."},"archives-2":{"name":"Archives","id":"archives-2","params":[{"number":2}],"classname":"widget_archive","customize_selective_refresh":true,"description":"A monthly archive of your site&#8217;s Posts."},"media_audio-1":{"name":"Audio","id":"media_audio-1","params":[{"number":-1}],"classname":"widget_media_audio","customize_selective_refresh":true,"description":"Displays an audio player.","mime_type":"audio"},"media_image-1":{"name":"Image","id":"media_image-1","params":[{"number":-1}],"classname":"widget_media_image","customize_selective_refresh":true,"description":"Displays an image.","mime_type":"image"},"media_gallery-1":{"name":"Gallery","id":"media_gallery-1","params":[{"number":-1}],"classname":"widget_media_gallery","customize_selective_refresh":true,"description":"Displays an image gallery.","mime_type":"image"},"media_video-1":{"name":"Video","id":"media_video-1","params":[{"number":-1}],"classname":"widget_media_video","customize_selective_refresh":true,"description":"Displays a video from the media library or from YouTube, Vimeo, or another provider.","mime_type":"video"},"meta-2":{"name":"Meta","id":"meta-2","params":[{"number":2}],"classname":"widget_meta","customize_selective_refresh":true,"description":"Login, RSS, &amp; WordPress.org links."},"search-2":{"name":"Search","id":"search-2","params":[{"number":2}],"classname":"widget_search","customize_selective_refresh":true,"description":"A search form for your site."},"text-1":{"name":"Text","id":"text-1","params":[{"number":1}],"classname":"widget_text","customize_selective_refresh":true,"description":"Arbitrary text."},"categories-2":{"name":"Categories","id":"categories-2","params":[{"number":2}],"classname":"widget_categories","customize_selective_refresh":true,"description":"A list or dropdown of categories."},"recent-posts-2":{"name":"Recent Posts","id":"recent-posts-2","params":[{"number":2}],"classname":"widget_recent_entries","customize_selective_refresh":true,"description":"Your site&#8217;s most recent Posts."},"recent-comments-2":{"name":"Recent Comments","id":"recent-comments-2","params":[{"number":2}],"classname":"widget_recent_comments","customize_selective_refresh":true,"description":"Your site&#8217;s most recent comments."},"rss-1":{"name":"RSS","id":"rss-1","params":[{"number":1}],"classname":"widget_rss","customize_selective_refresh":true,"description":"Entries from any RSS or Atom feed."},"tag_cloud-1":{"name":"Tag Cloud","id":"tag_cloud-1","params":[{"number":-1}],"classname":"widget_tag_cloud","customize_selective_refresh":true,"description":"A cloud of your most used tags."},"nav_menu-1":{"name":"Navigation Menu","id":"nav_menu-1","params":[{"number":-1}],"classname":"widget_nav_menu","customize_selective_refresh":true,"description":"Add a navigation menu to your sidebar."},"custom_html-1":{"name":"Custom HTML","id":"custom_html-1","params":[{"number":-1}],"classname":"widget_custom_html","customize_selective_refresh":true,"description":"Arbitrary HTML code."},"akismet_widget-1":{"name":"Akismet Widget","id":"akismet_widget-1","params":[{"number":-1}],"classname":"widget_akismet_widget","customize_selective_refresh":false,"description":"Display the number of spam comments Akismet has caught"},"sow-button-1":{"name":"SiteOrigin Button","id":"sow-button-1","params":[{"number":-1}],"classname":"widget_sow-button","customize_selective_refresh":false,"has_preview":true,"description":"A customizable button widget.","help":"https:\/\/siteorigin.com\/widgets-bundle\/button-widget-documentation\/"},"sow-google-map-1":{"name":"SiteOrigin Google Maps","id":"sow-google-map-1","params":[{"number":-1}],"classname":"widget_sow-google-map","customize_selective_refresh":false,"has_preview":true,"description":"A Google Maps widget.","help":"https:\/\/siteorigin.com\/widgets-bundle\/google-maps-widget\/"},"sow-image-1":{"name":"SiteOrigin Image","id":"sow-image-1","params":[{"number":-1}],"classname":"widget_sow-image","customize_selective_refresh":false,"has_preview":true,"description":"A simple image widget with massive power.","help":"https:\/\/siteorigin.com\/widgets-bundle\/image-widget-documentation\/"},"sow-slider-1":{"name":"SiteOrigin Slider","id":"sow-slider-1","params":[{"number":-1}],"classname":"widget_sow-slider","customize_selective_refresh":false,"has_preview":true,"description":"A responsive slider widget that supports images and video.","help":"https:\/\/siteorigin.com\/widgets-bundle\/slider-widget-documentation\/","panels_title":false},"sow-post-carousel-1":{"name":"SiteOrigin Post Carousel","id":"sow-post-carousel-1","params":[{"number":-1}],"classname":"widget_sow-post-carousel","customize_selective_refresh":false,"has_preview":true,"description":"Display your posts as a carousel.","instance_storage":true,"help":"https:\/\/siteorigin.com\/widgets-bundle\/post-carousel-widget\/"},"sow-editor-1":{"name":"SiteOrigin Editor","id":"sow-editor-1","params":[{"number":-1}],"classname":"widget_sow-editor","customize_selective_refresh":false,"has_preview":true,"description":"A rich-text, text editor.","help":"https:\/\/siteorigin.com\/widgets-bundle\/editor-widget\/"},"wpforms-widget-1":{"name":"WPForms","id":"wpforms-widget-1","params":[{"number":-1}],"classname":"wpforms-widget","customize_selective_refresh":false,"description":"Display a form."}},"l10n":{"widgetTooltip":"Shift-click to edit this widget."},"selectiveRefreshableWidgets":{"pages":true,"calendar":true,"archives":true,"media_audio":true,"media_image":true,"media_gallery":true,"media_video":true,"meta":true,"search":true,"text":true,"categories":true,"recent-posts":true,"recent-comments":true,"rss":true,"tag_cloud":true,"nav_menu":true,"custom_html":true,"akismet_widget":false,"sow-button":false,"sow-google-map":false,"sow-image":false,"sow-slider":false,"sow-post-carousel":false,"sow-editor":false,"wpforms-widget":false}};
 		</script>
 		<script>var _customizePartialRefreshExports = {"partials":{"custom_logo":{"settings":["custom_logo"],"primarySetting":"custom_logo","selector":".custom-logo-link","type":"default","fallbackRefresh":true,"containerInclusive":true}},"renderQueryVar":"wp_customize_render_partials","l10n":{"shiftClickToEdit":"Shift-click to edit this element.","clickEditMenu":"Click to edit this menu.","clickEditWidget":"Click to edit this widget.","clickEditTitle":"Click to edit the site title.","clickEditMisc":"Click to edit this element.","badDocumentWrite":"document.write() is forbidden"}};</script></body>
 </html>
 
-<!-- Dynamic page generated in 0.251 seconds. -->
-<!-- Cached page generated by WP-Super-Cache on 2018-06-03 02:56:39 -->
+<!-- Dynamic page generated in 0.465 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2018-06-03 03:22:10 -->
 
 <!-- Super Cache dynamic page detected but late init not set. See the readme.txt for further details. -->
 <!-- Dynamic WPCache Super Cache -->

