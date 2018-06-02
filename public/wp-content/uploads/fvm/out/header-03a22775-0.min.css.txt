@@ -1,0 +1,9 @@
+PROCESSED on Sat, 02 Jun 2018 19:58:14 +0000
+/wp-includes/css/dashicons.min.css --- Debug: [dashicons] File was opened from /home/ammarfaizi2/web/blog/public/wp-includes/css/dashicons.min.css ---
+/wp-includes/css/admin-bar.min.css --- Debug: [admin-bar] File was opened from /home/ammarfaizi2/web/blog/public/wp-includes/css/admin-bar.min.css ---
+/wp-content/plugins/wordpress-seo/css/dist/adminbar-753.min.css --- Debug: [yoast-seo-adminbar] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/plugins/wordpress-seo/css/dist/adminbar-753.min.css ---
+/wp-content/themes/marinate/css/bootstrap.css --- Debug: Fetched from transients cache with key fvm-cache-0e3951ba3 ---
+/wp-content/themes/marinate/css/font-awesome.css --- Debug: Fetched from transients cache with key fvm-cache-0363f1c9a ---
+/wp-content/themes/marinate/css/pushy.css --- Debug: Fetched from transients cache with key fvm-cache-0772d19fe ---
+/wp-content/themes/marinate/style.css --- Debug: Fetched from transients cache with key fvm-cache-01294187e ---
+PROCESSED from https://blog.ammarfaizi.net/?a
