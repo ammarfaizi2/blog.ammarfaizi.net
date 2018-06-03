@@ -1,0 +1,7 @@
+PROCESSED on Sat, 02 Jun 2018 20:53:35 +0000
+/wp-includes/css/dashicons.min.css --- Debug: Fetched from transients cache with key fvm-cache-0c70e171a ---
+/wp-includes/css/admin-bar.min.css --- Debug: Fetched from transients cache with key fvm-cache-0c35e16c9 ---
+/wp-content/themes/donovan/assets/css/custom-fonts.css --- Debug: [donovan-custom-fonts] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/themes/donovan/assets/css/custom-fonts.css ---
+/wp-content/plugins/wordpress-seo/css/dist/adminbar-753.min.css --- Debug: Fetched from transients cache with key fvm-cache-011f721ac ---
+/wp-content/themes/donovan/style.css --- Debug: [donovan-stylesheet] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/themes/donovan/style.css ---
+PROCESSED from https://blog.ammarfaizi.net/

@@ -1,1 +1,0 @@
-<?php die(); ?>{"dynamic":true,"uri":"blog.ammarfaizi.net\/","blog_id":1,"post":0,"key":"blog.ammarfaizi.net443\/-mobile","headers":{"Vary":"Vary: Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","Link":"Link: <https:\/\/blog.ammarfaizi.net\/wp-json\/>; rel=\"https:\/\/api.w.org\/\"","Last-Modified":"Last-Modified: Sat, 02 Jun 2018 20:23:39 GMT"}}

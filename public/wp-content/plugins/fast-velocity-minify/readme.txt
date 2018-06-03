@@ -2,7 +2,7 @@
 Contributors: Alignak
 Tags: PHP Minify, YUI Compressor, GTmetrix, Pingdom, Pagespeed, CSS Merging, JS Merging, CSS Minification, JS Minification, Speed Optimization, HTML Minification, Performance
 Requires at least: 4.5
-Stable tag: 2.3.1
+Stable tag: 2.3.2
 Tested up to: 4.9.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -270,6 +270,11 @@ Note: Kindly re-save all options and purge all caches (the plugin cache as well 
 
 
 == Changelog ==
+
+= 2.3.2 [2018.06.03] =
+* added some compatibility fixes when merging and minifying JS files
+* added an option to enable an "FVM Purge" button on the admin bar
+* moved all large transients (cached css or js code) to temporary disk files to reduce the database load
 
 = 2.3.1 [2018.06.01] =
 * bug fixes and performance tweaks for the "fix page editors" option

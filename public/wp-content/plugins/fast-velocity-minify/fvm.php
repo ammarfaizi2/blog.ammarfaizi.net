@@ -5,7 +5,7 @@ Plugin URI: http://fastvelocity.com
 Description: Improve your speed score on GTmetrix, Pingdom Tools and Google PageSpeed Insights by merging and minifying CSS and JavaScript files into groups, compressing HTML and other speed optimizations. 
 Author: Raul Peixoto
 Author URI: http://fastvelocity.com
-Version: 2.3.1
+Version: 2.3.2
 License: GPL2
 
 ------------------------------------------------------------------------
@@ -102,6 +102,7 @@ $ignore = array_map('trim', explode("\n", get_option('fastvelocity_min_ignore', 
 $blacklist = array_map('trim', explode("\n", get_option('fastvelocity_min_blacklist', '')));
 $ignorelist = array_map('trim', explode("\n", get_option('fastvelocity_min_ignorelist', '')));
 $merge_allowed_urls = array_map('trim', explode("\n", get_option('fastvelocity_min_merge_allowed_urls', '')));
+$fvm_enable_purgemenu = get_option('fastvelocity_min_enable_purgemenu');
 $default_protocol = get_option('fastvelocity_min_default_protocol', 'dynamic');
 $disable_js_merge = get_option('fastvelocity_min_disable_js_merge');
 $disable_css_merge = get_option('fastvelocity_min_disable_css_merge');
@@ -132,6 +133,7 @@ $fvm_remove_css = get_option('fastvelocity_min_fvm_removecss');
 $critical_path_css = get_option('fastvelocity_min_critical_path_css');
 $fvm_cdn_url = get_option('fastvelocity_min_fvm_cdn_url');
 
+
 # default options
 $used_css_files = array();
 
@@ -140,7 +142,7 @@ $exc = array('/html5shiv.js', '/html5shiv-printshiv.min.js', '/excanvas.js', '/a
 if(!is_array($blacklist) || strlen(implode($blacklist)) == 0) { update_option('fastvelocity_min_blacklist', implode("\n", $exc)); }
 
 # default ignore list
-$exc = array('/Avada/assets/js/main.min.js', '/woocommerce-product-search/js/product-search.js', '/includes/builder/scripts/frontend-builder-scripts.js', '/assets/js/jquery.themepunch.tools.min.js', '/js/TweenMax.min.js');
+$exc = array('/Avada/assets/js/main.min.js', '/woocommerce-product-search/js/product-search.js', '/includes/builder/scripts/frontend-builder-scripts.js', '/assets/js/jquery.themepunch.tools.min.js', '/js/TweenMax.min.js', '/jupiter/assets/js/min/full-scripts');
 if(!is_array($ignorelist) || strlen(implode($ignorelist)) == 0) { update_option('fastvelocity_min_ignorelist', implode("\n", $exc)); }
 
 
@@ -221,6 +223,27 @@ add_options_page('Fast Velocity Minify Settings', 'Fast Velocity Minify', 'manag
 }
 
 
+# add admin toolbar
+if($fvm_enable_purgemenu == true) {
+	add_action( 'admin_bar_menu', 'fastvelocity_admintoolbar', 100 );
+}
+
+# admin toolbar processing
+function fastvelocity_admintoolbar() {
+	if(current_user_can('manage_options')) {
+		global $wp_admin_bar;
+
+		# Create or add new items into the Admin Toolbar.
+		$wp_admin_bar->add_node(array(
+			'id'    => 'fvm',
+			'title' => '<span class="ab-icon"></span><span class="ab-label">' . __("FVM Purge",'fvm') . '</span>',
+			'href'  => admin_url( '/options-general.php?page=fastvelocity-min&fvm_flush=1' )
+		));
+
+	}
+}
+
+
 # function to list all cache files
 function fastvelocity_min_files_callback() {
 	global $cachedir;
@@ -271,6 +294,7 @@ function fastvelocity_min_load_admin_jscss($hook) {
 # register plugin settings
 function fastvelocity_min_register_settings() {
     register_setting('fvm-group', 'fastvelocity_min_ignore');
+	register_setting('fvm-group', 'fastvelocity_min_enable_purgemenu');
 	register_setting('fvm-group', 'fastvelocity_min_default_protocol');
     register_setting('fvm-group', 'fastvelocity_min_disable_js_merge');
     register_setting('fvm-group', 'fastvelocity_min_disable_css_merge');
@@ -314,10 +338,10 @@ function fastvelocity_min_register_settings() {
 
 # add settings link on plugin page
 function fastvelocity_min_settings_link($links) {
-if (is_plugin_active(plugin_basename( __FILE__ ))) { 
-$settings_link = '<a href="options-general.php?page=fastvelocity-min&tab=settings">Settings</a>'; 
-array_unshift($links, $settings_link); 
-}
+	if (is_plugin_active(plugin_basename( __FILE__ ))) { 
+		$settings_link = '<a href="options-general.php?page=fastvelocity-min&tab=settings">Settings</a>'; 
+		array_unshift($links, $settings_link); 
+	}
 return $links;
 }
 add_filter("plugin_action_links_".plugin_basename(__FILE__), 'fastvelocity_min_settings_link' );
@@ -341,11 +365,14 @@ $active_tab = isset($_GET['tab']) ? $_GET['tab'] : 'status';
 <?php
 
 # purge all caches
-if(isset($_POST['purgeall']) && $_POST['purgeall'] == 1) { 
-fvm_purge_all(); # purge all
-echo  __('<div class="notice notice-success is-dismissible"><p>The <strong>CSS and JS</strong> files have been purged!</p></div>');
-echo fastvelocity_purge_others(); # purge third party caches
+if(isset($_GET['page']) && $_GET['page'] == 'fastvelocity-min') { 
+	if((isset($_POST['purgeall']) && $_POST['purgeall'] == 1) || isset($_GET['fvm_flush']) && $_GET['fvm_flush'] == 1) { 
+		fvm_purge_all(); # purge all
+		echo  __('<div class="notice notice-success is-dismissible"><p>All caches from <strong>FVM</strong> have been purged!</p></div>');
+		echo fastvelocity_purge_others(); # purge third party caches
+	}
 }
+
 ?>
 
 <h2 class="nav-tab-wrapper wp-clearfix">
@@ -411,6 +438,17 @@ echo fastvelocity_purge_others(); # purge third party caches
 
 <table class="form-table fvm-settings">
 <tbody>
+
+<tr>
+<th scope="row">Admin Toolbar</th>
+<td>
+<p class="fvm-bold-green fvm-rowintro">Enable the "FVM purge" button on the admin bar.</p>
+<fieldset>
+<label for="fastvelocity_min_enable_purgemenu">
+<input name="fastvelocity_min_enable_purgemenu" type="checkbox" id="fastvelocity_min_enable_purgemenu" value="1" <?php echo checked(1 == get_option('fastvelocity_min_enable_purgemenu'), true, false); ?>>
+Admin Bar Purge <span class="note-info">[ If selected, a new option to purge FVM cache from the admin bar will show up. ]</span></label>
+</fieldset></td>
+</tr>
 
 <tr>
 <th scope="row">Troubleshooting</th>
@@ -796,7 +834,7 @@ Async CSS with LoadCSS<span class="note-info">[ Only works if "Inline all header
 
 <div style="height: 20px;"></div>
 <h2 class="title">Cache Location</h2>
-<p class="fvm-bold-green">Make sure you choose a publicly available directory and that there are writting permissions on that directory.</p>
+<p class="fvm-bold-green">If your server blocks JavaScript on the uploads directory, you can change "wp-content/uploads" with "wp-content/cache" or other allowed public directory.</p>
 <table class="form-table fvm-settings">
 <tbody>
 <tr>
@@ -813,7 +851,7 @@ Async CSS with LoadCSS<span class="note-info">[ Only works if "Inline all header
 <td><fieldset>
 <label for="fastvelocity_min_change_cache_base_url">
 <p><input type="text" name="fastvelocity_min_change_cache_base_url" id="fastvelocity_min_change_cache_base_url" value="<?php echo get_option('fastvelocity_min_change_cache_base_url', ''); ?>" size="80" /></p>
-<p class="description">[ Default cache base url is: <?php echo trim(fvm_get_protocol(wp_upload_dir()['baseurl']), '/'); ?> ]</p>
+<p class="description">[ Default cache base url is: <?php echo rtrim(fvm_get_protocol(wp_upload_dir()['baseurl']), '/'); ?> ]</p>
 </label>
 </fieldset></td>
 </tr>
@@ -946,7 +984,7 @@ for($i=0,$l=count($header);$i<$l;$i++) {
 					
 					# get css from hurl, if available and valid
 					$tkey = 'fvm-cache-'.$ctime.hash('adler32', $hurl);
-					$newcode = false; $newcode = get_transient($tkey);
+					$newcode = false; $newcode = fvm_get_transient($tkey);
 					if ( $newcode === false) {
 						$res = fvm_download_and_cache($hurl, $tkey, null, $disable_js_minification, 'js', $handle);
 						if(is_array($res)) {
@@ -1079,7 +1117,7 @@ for($i=0,$l=count($footer);$i<$l;$i++) {
 					
 					# get css from hurl, if available and valid
 					$tkey = 'fvm-cache-'.$ctime.hash('adler32', $hurl);
-					$newcode = false; $newcode = get_transient($tkey);
+					$newcode = false; $newcode = fvm_get_transient($tkey);
 					if ( $newcode === false) {
 						$res = fvm_download_and_cache($hurl, $tkey, null, $disable_js_minification, 'js', $handle);
 						if(is_array($res)) {
@@ -1284,7 +1322,7 @@ if(!$skip_google_fonts && count($google_fonts) > 0) {
 		
 		# google fonts download and inlining, ignore logs
 		$tkey = 'fvm-cache-'.$ctime.hash('adler32', $concat_google_fonts);
-		$newcode = false; $newcode = get_transient($tkey);
+		$newcode = false; $newcode = fvm_get_transient($tkey);
 		if ( $newcode === false) {
 			$res = fvm_download_and_cache($concat_google_fonts, $tkey, null, $disable_css_minification, 'css');
 			if(is_array($res)) { $newcode = $res['code']; }
@@ -1412,7 +1450,7 @@ for($i=0,$l=count($header);$i<$l;$i++) {
 					
 					# get css from hurl, if available and valid
 					$tkey = 'fvm-cache-'.$ctime.hash('adler32', $hurl);
-					$newcode = false; $newcode = get_transient($tkey);
+					$newcode = false; $newcode = fvm_get_transient($tkey);
 					if ( $newcode === false) {
 						$res = fvm_download_and_cache($hurl, $tkey, null, $disable_css_minification, 'css', $handle);
 						if(is_array($res)) {
@@ -1548,7 +1586,7 @@ if(!$skip_google_fonts && count($google_fonts) > 0) {
 		
 		# google fonts download and inlining, ignore logs
 		$tkey = 'fvm-cache-'.$ctime.hash('adler32', $concat_google_fonts);
-		$newcode = false; $newcode = get_transient($tkey);
+		$newcode = false; $newcode = fvm_get_transient($tkey);
 		if ( $newcode === false) {
 			$res = fvm_download_and_cache($concat_google_fonts, $tkey, null, $disable_css_minification, 'css');
 			if(is_array($res)) { $newcode = $res['code']; }
@@ -1673,7 +1711,7 @@ for($i=0,$l=count($footer);$i<$l;$i++) {
 					
 					# get css from hurl, if available and valid
 					$tkey = 'fvm-cache-'.$ctime.hash('adler32', $hurl);
-					$newcode = false; $newcode = get_transient($tkey);
+					$newcode = false; $newcode = fvm_get_transient($tkey);
 					if ( $newcode === false) {
 						$res = fvm_download_and_cache($hurl, $tkey, null, $disable_css_minification, 'css', $handle);
 						if(is_array($res)) {
