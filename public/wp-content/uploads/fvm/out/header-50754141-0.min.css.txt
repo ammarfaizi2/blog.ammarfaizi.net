@@ -1,0 +1,9 @@
+PROCESSED on Sun, 03 Jun 2018 11:44:49 +0000
+/wp-content/themes/donovan/assets/css/custom-fonts.css --- Debug: [donovan-custom-fonts] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/themes/donovan/assets/css/custom-fonts.css ---
+/wp-content/plugins/wordpress-seo/css/dist/adminbar-753.min.css --- Debug: [yoast-seo-adminbar] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/plugins/wordpress-seo/css/dist/adminbar-753.min.css ---
+/wp-content/plugins/jetpack/modules/masterbar/overrides.css --- Debug: [a8c_wpcom_css_override] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/plugins/jetpack/modules/masterbar/overrides.css ---
+/wp-content/themes/donovan/style.css --- Debug: [donovan-stylesheet] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/themes/donovan/style.css ---
+/wp-content/plugins/jetpack/modules/widgets/social-icons/social-icons.css --- Debug: [jetpack-widget-social-icons-styles] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/plugins/jetpack/modules/widgets/social-icons/social-icons.css ---
+/wp-content/plugins/tablepress/css/default.min.css --- Debug: [tablepress-default] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/plugins/tablepress/css/default.min.css ---
+/wp-content/plugins/jetpack/css/jetpack.css --- Debug: [jetpack_css] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/plugins/jetpack/css/jetpack.css ---
+PROCESSED from https://blog.ammarfaizi.net/
