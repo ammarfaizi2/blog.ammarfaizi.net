@@ -1,0 +1,1 @@
+<?php die(); ?>{"dynamic":true,"uri":"blackpass.cc\/","blog_id":1,"post":0,"key":"blackpass.cc443\/","headers":{"Vary":"Vary: Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","Link":"Link: <https:\/\/wp.me\/9XWWk>; rel=shortlink","Last-Modified":"Last-Modified: Thu, 12 Jul 2018 16:43:40 GMT"}}
