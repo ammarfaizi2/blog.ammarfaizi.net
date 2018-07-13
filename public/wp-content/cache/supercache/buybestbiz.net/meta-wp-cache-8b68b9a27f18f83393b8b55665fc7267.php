@@ -1,1 +1,0 @@
-<?php die(); ?>{"dynamic":true,"uri":"buybestbiz.net\/","blog_id":1,"post":0,"key":"buybestbiz.net443\/","headers":{"Vary":"Vary: Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","Link":"Link: <https:\/\/wp.me\/9XWWk>; rel=shortlink","Last-Modified":"Last-Modified: Thu, 12 Jul 2018 16:43:35 GMT"}}
