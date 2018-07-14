@@ -1,0 +1,4 @@
+PROCESSED on Sat, 14 Jul 2018 09:34:39 +0000
+/wp-content/plugins/jetpack/modules/related-posts/related-posts.css --- Debug: [jetpack_related-posts] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/plugins/jetpack/modules/related-posts/related-posts.css ---
+/wp-content/plugins/jetpack/css/jetpack.css --- Debug: [jetpack_css] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/plugins/jetpack/css/jetpack.css ---
+PROCESSED from https://blog.ammarfaizi.net/mysql/mengenal-mysql-untuk-pemula-part-1/embed/
