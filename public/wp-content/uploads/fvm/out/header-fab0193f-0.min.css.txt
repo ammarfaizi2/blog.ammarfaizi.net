@@ -1,6 +1,0 @@
-PROCESSED on Sat, 02 Jun 2018 19:56:00 +0000
-/wp-content/themes/marinate/css/bootstrap.css --- Debug: [bootstrap] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/themes/marinate/css/bootstrap.css ---
-/wp-content/themes/marinate/css/font-awesome.css --- Debug: [font-awesome] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/themes/marinate/css/font-awesome.css ---
-/wp-content/themes/marinate/css/pushy.css --- Debug: [pushy] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/themes/marinate/css/pushy.css ---
-/wp-content/themes/marinate/style.css --- Debug: [marinate-style] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/themes/marinate/style.css ---
-PROCESSED from https://blog.ammarfaizi.net/

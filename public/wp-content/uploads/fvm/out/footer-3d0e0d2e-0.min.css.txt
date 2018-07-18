@@ -1,3 +1,0 @@
-PROCESSED on Sun, 03 Jun 2018 15:34:55 +0000
-/wp-content/plugins/jetpack/css/jetpack.css --- Debug: [jetpack_css] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/plugins/jetpack/css/jetpack.css ---
-PROCESSED from https://blog.ammarfaizi.net/wp-login.php
