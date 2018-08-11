@@ -1,0 +1,1 @@
+<?php die(); ?>{"dynamic":true,"uri":"www.teainside.tech\/","blog_id":1,"post":0,"key":"www.teainside.tech443\/","headers":{"Vary":"Vary: Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","Link":"Link: <https:\/\/wp.me\/9XWWk>; rel=shortlink","Last-Modified":"Last-Modified: Sat, 11 Aug 2018 15:39:48 GMT"}}
