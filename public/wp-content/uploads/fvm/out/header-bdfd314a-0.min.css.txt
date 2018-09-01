@@ -1,4 +1,4 @@
-PROCESSED on Wed, 18 Jul 2018 14:02:23 +0000
+PROCESSED on Sat, 01 Sep 2018 14:49:59 +0000
 /wp-content/themes/donovan/assets/css/custom-fonts.css --- Debug: [donovan-custom-fonts] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/themes/donovan/assets/css/custom-fonts.css ---
 /wp-content/themes/donovan/style.css --- Debug: [donovan-stylesheet] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/themes/donovan/style.css ---
 /wp-content/plugins/jetpack/modules/widgets/social-icons/social-icons.css --- Debug: [jetpack-widget-social-icons-styles] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/plugins/jetpack/modules/widgets/social-icons/social-icons.css ---

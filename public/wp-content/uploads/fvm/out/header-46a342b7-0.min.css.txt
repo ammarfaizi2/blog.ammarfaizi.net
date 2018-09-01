@@ -1,4 +1,4 @@
-PROCESSED on Wed, 18 Jul 2018 13:07:36 +0000
+PROCESSED on Sat, 01 Sep 2018 14:50:04 +0000
 /wp-content/plugins/jetpack/modules/related-posts/related-posts.css --- Debug: [jetpack_related-posts] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/plugins/jetpack/modules/related-posts/related-posts.css ---
 /wp-content/themes/donovan/assets/css/custom-fonts.css --- Debug: [donovan-custom-fonts] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/themes/donovan/assets/css/custom-fonts.css ---
 /wp-content/themes/donovan/style.css --- Debug: [donovan-stylesheet] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/themes/donovan/style.css ---
@@ -7,4 +7,4 @@ PROCESSED on Wed, 18 Jul 2018 13:07:36 +0000
 /wp-content/plugins/jetpack/modules/sharedaddy/sharing.css --- Debug: [sharedaddy] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/plugins/jetpack/modules/sharedaddy/sharing.css ---
 /wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css --- Debug: [social-logos] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css ---
 /wp-content/plugins/jetpack/css/jetpack.css --- Debug: [jetpack_css] File was opened from /home/ammarfaizi2/web/blog/public/wp-content/plugins/jetpack/css/jetpack.css ---
-PROCESSED from https://blog.ammarfaizi.net/mysql/mengenal-mysql-untuk-pemula-part-2/
+PROCESSED from https://blog.ammarfaizi.net/https:/blog.ammarfaizi.net/mysql/mengenal-mysql-untuk-pemula-part-2/
