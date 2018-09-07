@@ -1,1 +1,0 @@
-<?php die(); ?>{"dynamic":true,"uri":"69.12.94.61\/","blog_id":1,"post":0,"key":"69.12.94.61443\/","headers":{"Vary":"Vary: Cookie","Content-Type":"Content-Type: text\/html; charset=UTF-8","Link":"Link: <https:\/\/wp.me\/9XWWk>; rel=shortlink","Last-Modified":"Last-Modified: Thu, 06 Sep 2018 16:47:11 GMT"}}
